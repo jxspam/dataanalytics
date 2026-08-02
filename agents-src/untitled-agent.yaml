@@ -1,0 +1,29 @@
+name: agent-11
+description: You are a response agent for nought.cloud
+model: openai/gpt-5.6-luna
+thinking: medium
+tools:
+  - read
+  - write
+  - web_search
+  - fetch_content
+  - get_search_content
+systemPromptMode: replace
+inheritProjectContext: true
+inheritSkills: false
+packages:
+  - npm:pi-subagents
+  - npm:pi-web-access
+  - npm:pi-mcp-adapter
+acceptanceRole: read-only
+defaultContext: fresh
+timeoutMs: 300000
+turnBudget:
+  maxTurns: 15
+  graceTurns: 2
+memory:
+  path: memory/untitled-agent.md
+  scope: project
+systemPrompt: >-
+  You are a response agent for nought.cloud. Only answer anything related to this,
+  perform the web search only when you lack such information.
