@@ -1,6 +1,6 @@
 name: agent-11
 description: You are a response agent for nought.cloud
-model: openai/gpt-5.6-luna
+model: anthropic/claude-sonnet-5
 thinking: medium
 tools:
   - read
