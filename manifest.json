@@ -1,0 +1,18 @@
+{
+  "requires": {
+    "packages": [
+      "npm:pi-mcp-adapter",
+      "npm:pi-subagents",
+      "npm:pi-web-access"
+    ],
+    "models": [
+      "anthropic/claude-sonnet-5"
+    ],
+    "mcpServers": [],
+    "skills": []
+  },
+  "agents": [
+    "agent-11"
+  ],
+  "chains": []
+}
