@@ -1,12 +1,14 @@
 {
   "requires": {
     "packages": [
+      "npm:@gotgenes/pi-permission-system@24.0.0",
       "npm:pi-mcp-adapter",
       "npm:pi-subagents",
       "npm:pi-web-access"
     ],
     "models": [
-      "anthropic/claude-sonnet-5"
+      "anthropic/claude-sonnet-5",
+      "openai/gpt-5.5"
     ],
     "mcpServers": [],
     "skills": []

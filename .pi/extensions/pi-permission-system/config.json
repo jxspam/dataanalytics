@@ -1,0 +1,19 @@
+{
+  "debugLog": false,
+  "permissionReviewLog": false,
+  "permission": {
+    "*": "ask",
+    "bash": {
+      "*": "ask",
+      "git diff": "allow",
+      "git status": "allow"
+    },
+    "read": "allow",
+    "path": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    }
+  }
+}

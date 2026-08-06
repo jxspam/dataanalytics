@@ -1,7 +1,7 @@
 name: agent-11
 description: You are a response agent for nought.cloud
-model: anthropic/claude-sonnet-5
-thinking: medium
+model: openai/gpt-5.5
+thinking: low
 tools:
   - read
   - write
@@ -21,7 +21,18 @@ timeoutMs: 300000
 turnBudget:
   maxTurns: 15
   graceTurns: 2
+memory:
+  path: agent-11
+  scope: project
 notes: true
+harness: claude-code
+permission:
+  '*': ask
+  bash:
+    '*': ask
+    git diff: allow
+    git status: allow
+  read: allow
 systemPrompt: >-
   You are a response agent for nought.cloud. Only answer anything related to this,
   perform the web search only when you lack such information.
