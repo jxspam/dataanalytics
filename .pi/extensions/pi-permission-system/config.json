@@ -3,6 +3,7 @@
   "permissionReviewLog": false,
   "permission": {
     "*": "ask",
+    "mcp": "allow",
     "bash": {
       "*": "ask",
       "git diff": "allow",
